@@ -23,10 +23,10 @@ exports('StartProg', StartProg)
 exports('StopProg', StopProg)
 
 RegisterCommand('test', function()
-    local res = exports['willyarte-prog']:StartProg('Drinking...', 5000)
+    local res = exports['forge-progress']:StartProg('Drinking...', 5000)
     print(res)
 end)
 
 RegisterCommand('sp', function()
-    exports['willyarte-prog']:StopProg()
+    exports['forge-progress']:StopProg()
 end)
